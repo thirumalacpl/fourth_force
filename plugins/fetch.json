@@ -15,5 +15,13 @@
         },
         "is_top_level": true,
         "variables": {}
+    },
+    "mp-cordova-plugin-camera": {
+        "source": {
+            "type": "registry",
+            "id": "mp-cordova-plugin-camera"
+        },
+        "is_top_level": true,
+        "variables": {}
     }
 }

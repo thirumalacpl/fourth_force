@@ -103,7 +103,7 @@
 
 <gap:plugin name="org.apache.cordova.splashscreen" source="npm"/>  -->
 
-<gap:plugin name="org.apache.cordova.camera" version="0.2.9" />
+<!-- <gap:plugin name="org.apache.cordova.camera" version="0.2.9" /> -->
 
 <gap:plugin name="org.apache.cordova.device-orientation" source="npm"/> 
 <gap:plugin name="org.apache.cordova.dialogs" source="npm"/> 
@@ -179,7 +179,7 @@
   </feature> -->
 
 <!-- iOS Specific Fixes -->
-  <gap:plugin name="com.phonegap.plugin.statusbar" />
+ <!--  <gap:plugin name="com.phonegap.plugin.statusbar" /> -->
 
   <preference name="StatusBarOverlaysWebView" value="true" />
   <preference name="StatusBarBackgroundColor" value="#000000" />
