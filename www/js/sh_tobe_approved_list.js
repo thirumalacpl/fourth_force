@@ -523,24 +523,24 @@ if( hj == gj && huemploy == qualification_id){
 
 }
 
-/*if(qualification_id == '40' ){
-//alert('function distributor residential id 40');
-for(a=0;a<distributor_verification_array.length;a++){
-  distr_residential = distributor_verification_array[a];
+if(qualification_id == '63' ){
+//alert('function assest id 16 to 26');
 
-  super_obj = tobe_approved_sh[index];
-  hj =distr_residential.user_id;
-  huemploy=distr_residential.address_group;
+for(a=0;a<assests_verification_array.length;a++){
+  assest_ver = assests_verification_array[a];
+
+  super_inpro_obj = tobe_approved_sh[index];
+  hj =assest_ver.user_id;
+  huemploy=assest_ver.address_group;
 //alert(h+'hh');
-gj =super_obj.verification_user_id;
-//alert(hj+'hj'+gj+'gg'+huemploy+'qualification_id'+qualification_id);
+gj =super_inpro_obj.verification_user_id;
+//alert(hj+'gg'+gj+''+huemploy+'qualification_id'+qualification_id);
 if( hj == gj && huemploy == qualification_id){
-  distr_residentiala = distributor_verification_array[a];
+  assest_inproa = assests_verification_array[a];
 //alert(employment_obja_inpod.user_id+'employment_records_array'+gj);
 }
 }
-
-}*/
+}
 
 if(qualification_id == '41' ){
 //alert('function distributor residential id 41');
@@ -990,6 +990,24 @@ $.mobile.changePage($('#sh_tobe_approved_inside'), { transition: "none", changeH
 return false;
 }
 sessionStorage.setItem("common_addressa",JSON.stringify(common_addressa));
+sessionStorage.setItem("currentobj",JSON.stringify(super_obj));
+$.mobile.changePage($('#sh_tobe_approved_inside'), { transition: "none", changeHash: true, reverse: false });
+return false;
+}
+}
+
+if(qualification_id == '63' ){
+      if(assest_inproa !== undefined){ 
+if(supervisor_final_commanda !== undefined && coordinator_final_commanda !== undefined){
+
+sessionStorage.setItem("supervisor_final_commanda",JSON.stringify(supervisor_final_commanda));
+sessionStorage.setItem("coordinator_final_commanda",JSON.stringify(coordinator_final_commanda));
+sessionStorage.setItem("assest_inproa",JSON.stringify(web_veria));
+sessionStorage.setItem("currentobj",JSON.stringify(super_obj));
+$.mobile.changePage($('#sh_tobe_approved_inside'), { transition: "none", changeHash: true, reverse: false });
+return false;
+}
+sessionStorage.setItem("assest_inproa",JSON.stringify(web_veria));
 sessionStorage.setItem("currentobj",JSON.stringify(super_obj));
 $.mobile.changePage($('#sh_tobe_approved_inside'), { transition: "none", changeHash: true, reverse: false });
 return false;

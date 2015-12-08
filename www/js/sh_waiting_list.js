@@ -452,7 +452,6 @@ if( hj == gj && huemploy == qualification_id){
 //alert(employment_obja_inpod.user_id+'employment_records_array'+gj);
 }
 }
-
 }
 
 if(qualification_id == '32' || qualification_id == '33' || qualification_id == '34' || qualification_id == '35'){
@@ -475,7 +474,7 @@ if( hj == gj && huemploy == qualification_id){
 }
 
 if(qualification_id == '64' ){
-alert('function bank id 27 to 28');
+//alert('function bank id 27 to 28');
 for(a=0;a<bankguarantee_verification_array.length;a++){
   bank_guar = bankguarantee_verification_array[a];
 
@@ -803,7 +802,7 @@ return false;
 if(qualification_id == '64' ){
 
   if(bank_inproa !== undefined ){
-    alert('sessionStorage');
+    //alert('sessionStorage');
 if(supervisor_final_commanda !== undefined ){
 sessionStorage.setItem("bank_inpro",JSON.stringify(bank_inproa));
 sessionStorage.setItem("supervisor_final_commanda",JSON.stringify(supervisor_final_commanda));

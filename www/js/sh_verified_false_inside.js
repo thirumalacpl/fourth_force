@@ -111,7 +111,7 @@ supervisor_final_commanda =  JSON.parse(sessionStorage.getItem("supervisor_final
 
 coordinator_final_commanda = JSON.parse(sessionStorage.getItem("coordinator_final_commanda"));
 
-bank_inpro =  JSON.parse(sessionStorage.getItem("bank_inpro"));
+bank_inpro =  JSON.parse(sessionStorage.getItem("bank_inproa"));
 assest_inpro =  JSON.parse(sessionStorage.getItem("assest_inpro"));
 address_veriia =  JSON.parse(sessionStorage.getItem("address_veriia"));
 referencea =  JSON.parse(sessionStorage.getItem("referencea"));

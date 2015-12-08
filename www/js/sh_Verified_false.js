@@ -256,7 +256,7 @@ if(qualification_id == '64' ){
 //var lis='<li class="ui-li-has-thumb ui-first-child li_list"><a href="#" onclick="shfalselist('+a+')" class="waves-effect waves-button ui-btn ui-btn-icon-right ui-icon-carat-r  waves-button waves-effect waves-button"><img src="images/mobile/BANK.png" class="li_imgs_1"><h2 class="li_h2">'+super_obj.First_Name+''+super_obj.Last_Name+'</h2 class="li_h2"><p class="li_p">'+super_obj.Verification_Category+'</p><p class="li_p">'+super_obj.task_name+'</p><p class="li_p">'+super_obj.qname+'</p><span class="li_span">'+date+'</span><b class="li_b_1">'+super_obj.Verification_Master_Id+'</b></a></li>'
 var lis='<li class="ui-li-has-thumb ui-first-child li_list"><a href="#" onclick="shfalselist('+a+')" class="waves-effect waves-button ui-btn ui-btn-icon-right ui-icon-carat-r  waves-button waves-effect waves-button"><img src="images/mobile/BANK.png" class="li_imgs_1"><h2 class="li_h2">'+super_obj.name+'</h2 class="li_h2"><p class="li_p">'+super_obj.verification_for+'</p><p class="li_p">'+super_obj.qualification_name+'</p><p class="li_p">'+super_obj.qualification_name+'</p><span class="li_span">'+date+'</span><b class="li_b_1">'+super_obj.ref_no+'</b></a></li>'
 
-$('#lis_lis_shsollrfalsesh').append(lis);
+$('#lis_shsollrfalse').append(lis);
 
 }
 
@@ -902,6 +902,27 @@ return false;
 }
 //alert('currentob bank succes');
 sessionStorage.setItem("assest_inpro",JSON.stringify(assest_inproa));
+sessionStorage.setItem("currentobj",JSON.stringify(super_obj));
+$.mobile.changePage($('#sh_verified_false_inside'), { transition: "none", changeHash: true, reverse: false });
+return false;
+}
+}
+
+if(qualification_id == '64' ){
+   if(bank_inproa !== undefined){
+    //alert("s");
+if(supervisor_final_commanda !== undefined && coordinator_final_commanda !== undefined){
+
+sessionStorage.setItem("supervisor_final_commanda",JSON.stringify(supervisor_final_commanda));
+sessionStorage.setItem("coordinator_final_commanda",JSON.stringify(coordinator_final_commanda));
+
+sessionStorage.setItem("bank_inproa",JSON.stringify(bank_inproa));
+sessionStorage.setItem("currentobj",JSON.stringify(super_obj));
+$.mobile.changePage($('#sh_verified_false_inside'), { transition: "none", changeHash: true, reverse: false });
+return false;
+}
+//alert('currentob bank succes');
+sessionStorage.setItem("bank_inproa",JSON.stringify(bank_inproa));
 sessionStorage.setItem("currentobj",JSON.stringify(super_obj));
 $.mobile.changePage($('#sh_verified_false_inside'), { transition: "none", changeHash: true, reverse: false });
 return false;
