@@ -768,15 +768,6 @@ if ( k == 5){
 }
 
 
-$('#from_not_veri').html(' <h1 class="sdah1">From-To</h1><p class="sdap">'+currentobj_employment_records.working_from+'</p><p class="sdap">'+currentobj_employment_records.working_to+'</p>');
-$('#designation_not_Veri').html('<h1 class="sdah1">Company</h1><p class="sdap">'+currentobj_employment_records.employer_name+'</p>');
-$('#percentage_not_veriqw').html('<h1 class="sdah1">Salary</h1><p class="sdap">'+currentobj_employment_records.employee_final_salary+'</p>');
-$('#year_of_passing_veriiiog').html('<h1 class="sdah1">location</h1><p class="sdap">'+currentobj_employment_records.employer_addressone+'</p>');
-$('#institute_inproo_not_veri').text(user_obja.qualification_name);
-$('#address_inproo_not_veri').text(currentobj_employment_records.employer_addressone);
-$('#pincode_inproo_not_veri').text(currentobj_employment_records.employer_zipcode);
-
-
 }
 
 }

@@ -65,7 +65,7 @@ $("#verified_count").html(verified_count.super_verified_count);
 for(a=0;a<supervisor_not_verified_count_array.length;a++){
   not_verified_count = supervisor_not_verified_count_array[a];
 // alert(not_verified_count.not_verified_count+'new_verification_count');
-$("#not_verified_count").html(not_verified_count.super_verified_count);
+$("#not_verified_count").html(not_verified_count.supervisor_not_verified_count_array);
 
 }
 

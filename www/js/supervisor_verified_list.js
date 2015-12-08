@@ -798,22 +798,7 @@ return false;
 }
 }
 
-if(qualification_id == '27' ){
-     if(bank_inproa !== undefined){
-if(supervisor_final_commanda !== undefined){
-sessionStorage.setItem("currentobj_veri",JSON.stringify(superr_objj));
-sessionStorage.setItem("bank_inpro",JSON.stringify(bank_inproa));
-  sessionStorage.setItem("supervisor_final_commanda",JSON.stringify(supervisor_final_commanda));
-$.mobile.changePage($('#pagedesign_veri'), { transition: "none", changeHash: true, reverse: false });
-return false;
-}
-//alert('currentob bank succes');
-sessionStorage.setItem("bank_inpro",JSON.stringify(bank_inproa));
-sessionStorage.setItem("currentobj_inpro",JSON.stringify(superr_objj));
-$.mobile.changePage($('#pagedesign_veri'), { transition: "none", changeHash: true, reverse: false });
-return false;
-}
-}
+
 
 if(qualification_id == '16' || qualification_id == '17' || qualification_id == '18' || qualification_id == '19' || qualification_id == '20' || qualification_id == '21' ||qualification_id == '22' || qualification_id == '23' || qualification_id == '24' || qualification_id == '25' || qualification_id == '26'){
    if(assest_inproa !== undefined){

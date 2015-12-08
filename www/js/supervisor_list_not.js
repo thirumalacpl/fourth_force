@@ -384,7 +384,7 @@ for(a=0;a<supervisor_final_command_array.length;a++){
 }
 }
 
-if(qualification_id == '29' || qualification_id == '30' || qualification_id == '31'){
+if(qualification_id == '29'  || qualification_id == '31'){
 //alert('function address id 29 to 31');
 for(a=0;a<address_verification_array.length;a++){
   address_verii = address_verification_array[a];
@@ -423,24 +423,7 @@ if( hj == gj && huemploy == qualification_id){
 
 }
 
-if(qualification_id == '27' ){
-//alert('function bank id 27 to 28');
-for(a=0;a<bankguarantee_verification_array.length;a++){
-  bank_guar = bankguarantee_verification_array[a];
 
-  super_obj = not_veri_array[index];
-  hj =bank_guar.user_id;
-  huemploy=bank_guar.acc_mode;
-//alert(h+'hh');
-gj =super_obj.verification_user_id;
-//alert(hj+'hj'+gj+'gg'+huemploy+'qualification_id'+qualification_id);
-if( hj == gj && huemploy == qualification_id){
-  bank_inproa = bankguarantee_verification_array[a];
-//alert(employment_obja_inpod.user_id+'employment_records_array'+gj);
-}
-}
-
-}
 
 if(qualification_id == '63' ){
 //alert('function assest id 16 to 26');
@@ -459,7 +442,6 @@ if( hj == gj && huemploy == qualification_id){
 //alert(employment_obja_inpod.user_id+'employment_records_array'+gj);
 }
 }
-
 }
 
 if(qualification_id == '41' ){
@@ -613,6 +595,24 @@ if( hj == gj && huemploy == qualification_id){
 }
 }
 
+if(qualification_id == '64' ){
+alert('function bank id 64');
+for(a=0;a<bankguarantee_verification_array.length;a++){
+  bank_guar = bankguarantee_verification_array[a];
+
+  super_inpro_obj = not_veri_array[index];
+  hj =bank_guar.user_id;
+  huemploy=bank_guar.address_group;
+//alert(h+'hh');
+gj =super_inpro_obj.verification_user_id;
+//alert(hj+'hj'+gj+'gg'+huemploy+'qualification_id'+qualification_id);
+if( hj == gj && huemploy == qualification_id){
+  bank_inproa = bankguarantee_verification_array[a];
+//alert(bank_inproa.user_id);
+}
+}
+
+}
 
 
 if(qualification_id == '65' ){
@@ -742,6 +742,7 @@ return false;
 }
 
 if(qualification_id == '32' || qualification_id == '33' || qualification_id == '34' || qualification_id == '35'){
+   if(referencea !== undefined){
 if(supervisor_final_commanda !== undefined){
 
 sessionStorage.setItem("supervisor_final_commanda",JSON.stringify(supervisor_final_commanda));
@@ -757,8 +758,10 @@ sessionStorage.setItem("currentobj_not_veri",JSON.stringify(super_obj));
 $.mobile.changePage($('#pagedesign_not_veri'), { transition: "none", changeHash: true, reverse: false });
 return false;
 }
+}
 
-if(qualification_id == '29' || qualification_id == '30' || qualification_id == '31'){
+if(qualification_id == '29'  || qualification_id == '31'){
+     if(address_veriia !== undefined){
 if(supervisor_final_commanda !== undefined){
 
 sessionStorage.setItem("supervisor_final_commanda",JSON.stringify(supervisor_final_commanda));
@@ -772,23 +775,12 @@ sessionStorage.setItem("currentobj_not_veri",JSON.stringify(super_obj));
 $.mobile.changePage($('#pagedesign_not_veri'), { transition: "none", changeHash: true, reverse: false });
 return false;
 }
-
-if(qualification_id == '27' ){
-if(supervisor_final_commanda !== undefined){
-
-sessionStorage.setItem("supervisor_final_commanda",JSON.stringify(supervisor_final_commanda));
-sessionStorage.setItem("currentobj_not_veri",JSON.stringify(super_obj));
-sessionStorage.setItem("bank_inpro",JSON.stringify(bank_inproa));
-$.mobile.changePage($('#pagedesign_not_veri'), { transition: "none", changeHash: true, reverse: false });
-return false;
 }
-//alert('currentob bank succes');
-sessionStorage.setItem("bank_inpro",JSON.stringify(bank_inproa));
-sessionStorage.setItem("currentobj_not_veri",JSON.stringify(super_obj));
-$.mobile.changePage($('#pagedesign_not_veri'), { transition: "none", changeHash: true, reverse: false });
-return false;}
+
+
 
 if(qualification_id == '16' || qualification_id == '17' || qualification_id == '18' || qualification_id == '19' || qualification_id == '20' || qualification_id == '21' ||qualification_id == '22' || qualification_id == '23' || qualification_id == '24' || qualification_id == '25' || qualification_id == '26'){
+if(assest_inproa !== undefined){
 if(supervisor_final_commanda !== undefined){
 
 sessionStorage.setItem("supervisor_final_commanda",JSON.stringify(supervisor_final_commanda));
@@ -803,26 +795,10 @@ sessionStorage.setItem("currentobj_not_veri",JSON.stringify(super_obj));
 $.mobile.changePage($('#pagedesign_not_veri'), { transition: "none", changeHash: true, reverse: false });
 return false;
 }
-
-/*if(qualification_id == '40' ){
-  alert('distr_residentiala');
-if(supervisor_final_commanda !== undefined){
-
-sessionStorage.setItem("supervisor_final_commanda",JSON.stringify(supervisor_final_commanda));
-sessionStorage.setItem("currentobj_not_veri",JSON.stringify(super_obj));
-sessionStorage.setItem("distr_residentiala",JSON.stringify(distr_residentiala));
-$.mobile.changePage($('#pagedesign_not_veri'), { transition: "none", changeHash: true, reverse: false });
-return false;
 }
-//alert('currentob bank succes');
-sessionStorage.setItem("distr_residentiala",JSON.stringify(distr_residentiala));
-sessionStorage.setItem("currentobj_not_veri",JSON.stringify(super_obj));
-$.mobile.changePage($('#pagedesign_not_veri'), { transition: "none", changeHash: true, reverse: false });
-return false;
-}*/
-
 
 if(qualification_id == '41' ){
+  if(dist_detailsa !== undefined ){
 if(supervisor_final_commanda !== undefined){
 
 sessionStorage.setItem("supervisor_final_commanda",JSON.stringify(supervisor_final_commanda));
@@ -836,9 +812,11 @@ sessionStorage.setItem("dist_detailsa",JSON.stringify(dist_detailsa));
 sessionStorage.setItem("currentobj_not_veri",JSON.stringify(super_obj));
 $.mobile.changePage($('#pagedesign_not_veri'), { transition: "none", changeHash: true, reverse: false });
 return false;
+}
 }
 
 if(qualification_id == '43' ){
+   if(web_veria !== undefined ){
 if(supervisor_final_commanda !== undefined){
 sessionStorage.setItem("supervisor_final_commanda",JSON.stringify(supervisor_final_commanda));
 
@@ -852,9 +830,11 @@ sessionStorage.setItem("web_veria",JSON.stringify(web_veria));
 sessionStorage.setItem("currentobj_not_veri",JSON.stringify(super_obj));
 $.mobile.changePage($('#pagedesign_not_veri'), { transition: "none", changeHash: true, reverse: false });
 return false;
+}
 }
 
 if(qualification_id == '47' ){
+   if(supplier_venda !== undefined ){
 if(supervisor_final_commanda !== undefined){
 sessionStorage.setItem("supervisor_final_commanda",JSON.stringify(supervisor_final_commanda));
 
@@ -869,9 +849,11 @@ sessionStorage.setItem("supplier_venda",JSON.stringify(supplier_venda));
 sessionStorage.setItem("currentobj_not_veri",JSON.stringify(super_obj));
 $.mobile.changePage($('#pagedesign_not_veri'), { transition: "none", changeHash: true, reverse: false });
 return false;
+}
 }
 
 if(qualification_id == '45' ){
+  if(ware_housa !== undefined ){
 if(supervisor_final_commanda !== undefined){
 sessionStorage.setItem("supervisor_final_commanda",JSON.stringify(supervisor_final_commanda));
 
@@ -886,6 +868,7 @@ sessionStorage.setItem("ware_housa",JSON.stringify(ware_housa));
 sessionStorage.setItem("currentobj_not_veri",JSON.stringify(super_obj));
 $.mobile.changePage($('#pagedesign_not_veri'), { transition: "none", changeHash: true, reverse: false });
 return false;
+}
 }
 
 if(qualification_id == '42' || qualification_id == '46' || qualification_id == '44' || qualification_id == '48' || qualification_id == '30' || qualification_id == '40'){
@@ -1005,6 +988,25 @@ sessionStorage.setItem("assest_inproa",JSON.stringify(assest_inproa));
 sessionStorage.setItem("currentobj_not_veri",JSON.stringify(super_obj));
 $.mobile.changePage($('#pagedesign_not_veri'), { transition: "none", changeHash: true, reverse: false });
 return false;
+}
+}
+
+if(qualification_id == '64' ){
+  if(bank_inproa !== undefined ){
+      if(supervisor_final_commanda !== undefined ){
+  if(supervisor_final_commanda !== undefined){
+sessionStorage.setItem("bank_inpro",JSON.stringify(bank_inproa));
+sessionStorage.setItem("currentobj_not_veri",JSON.stringify(super_obj));
+sessionStorage.setItem("supervisor_final_commanda",JSON.stringify(supervisor_final_commanda));
+$.mobile.changePage($('#pagedesign_not_veri'), { transition: "none", changeHash: true, reverse: false });
+return false;
+}
+//alert('currentob bank succes');
+sessionStorage.setItem("bank_inpro",JSON.stringify(bank_inproa));
+sessionStorage.setItem("currentobj_not_veri",JSON.stringify(super_obj));
+$.mobile.changePage($('#pagedesign_not_veri'), { transition: "none", changeHash: true, reverse: false });
+return false;
+}
 }
 }
 
